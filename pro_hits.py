@@ -9,7 +9,7 @@ import sys
 
 API = 'http://api.scholexplorer.openaire.eu/v2/Links'
 out = 'records.json'
-links = 'links.csv'
+links = 'links.tsv'
 mydata = {} #dict where key is dro_doi and value is json record describing research data
 mydict = {}
 
@@ -29,7 +29,7 @@ for dro_doi in fileinput.input():
         try:
             data = r.json()
             myres = data['result']
-            mylist = []
+            mystr = ""
             if len(myres) == 0:
                 raise SystemExit('Did not find research data for doi ' + dro_doi)
             else:
@@ -45,11 +45,12 @@ for dro_doi in fileinput.input():
                         data_doi = idict['ID']
                         scheme = idict['IDScheme']
                         if scheme == 'doi':
-                            mylist.append(data_doi)
+                            if len(mystr) > 0: mystr += '\t'
+                            mystr += data_doi
                             print('*********************************')
                             print('******** DATA DOI ********: ' + data_doi)
                             print('*********************************')
-            mydict[dro_doi.rstrip()] = mylist
+            mydict[dro_doi.rstrip()] = mystr
         except ValueError:
             print('invalid JSON')
 """     json_string = json.dumps(r.json())
@@ -57,5 +58,5 @@ for dro_doi in fileinput.input():
         print('\n')
 """
 for d in mydict:
-    fh.write(d + '\t' + str(mydict[d]) + '\n')
+    fh.write(d + '\t' + mydict[d] + '\n')
 print(mydict)
