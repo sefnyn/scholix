@@ -1,20 +1,20 @@
 #Process DRO DOIs with positive links to research data
-#
-#
 
 import fileinput
 import json
 import requests
 import sys
 
+DURHAM_DATACITE_PREFIX = '10.15128'
 API = 'http://api.scholexplorer.openaire.eu/v2/Links'
-out = 'records.json'
+data = 'records.json'
 links = 'links.tsv'
 mydata = {} #dict where key is dro_doi and value is json record describing research data
+myscheme = {}
 mydict = {}
 
-print('opening output file ' + out)
-g = open(out, 'w')
+print('opening file for JSON records: ' + data)
+g = open(data, 'a')
 fh = open(links, 'w')
 
 for dro_doi in fileinput.input():
@@ -28,8 +28,10 @@ for dro_doi in fileinput.input():
         print('************************************ Processing doi ' + dro_doi)
         try:
             data = r.json()
+            json_string = json.dumps(data, indent=4)
+            g.write(json_string)
             myres = data['result']
-            mystr = ""
+            mylist = []
             if len(myres) == 0:
                 raise SystemExit('Did not find research data for doi ' + dro_doi)
             else:
@@ -39,24 +41,38 @@ for dro_doi in fileinput.input():
                     print('Source: ')
                     print(source)
                     ids = source['Identifier']
+                    pub = source['Publisher']
                     print('Ids: ')
                     print(ids)
                     for idict in ids:
                         data_doi = idict['ID']
-                        scheme = idict['IDScheme']
-                        if scheme == 'doi':
-                            if len(mystr) > 0: mystr += '\t'
-                            mystr += data_doi
-                            print('*********************************')
-                            print('******** DATA DOI ********: ' + data_doi)
-                            print('*********************************')
+                        if data_doi.startswith(DURHAM_DATACITE_PREFIX):
+                            #Looks like this link points to DRO-DATA; ignore it........
+                            print('Nada')
+                        else:
+                            scheme = idict['IDScheme']
+                            if scheme == 'doi':
+                                found = 0
+                        if d == data_doi:
+			                found = 1
+                    if found == 0:		
+                        mylist.append(data_doi)
+                            else:
+                                try:
+                                    val = myscheme[scheme]
+                                    val += 1
+                                    myscheme[scheme] = val
+                                except KeyError:
+                                    myscheme[scheme] = 1
+	    mystr = ""
+	    for d in mylist:
+		mystr += d + '\t'
             mydict[dro_doi.rstrip()] = mystr
         except ValueError:
             print('invalid JSON')
-"""     json_string = json.dumps(r.json())
-        print(json_string)
-        print('\n')
-"""
 for d in mydict:
     fh.write(d + '\t' + mydict[d] + '\n')
+print('Dictionary: ')
 print(mydict)
+print('Schemes: ')
+print(myscheme)

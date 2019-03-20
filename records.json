@@ -1,0 +1,2598 @@
+{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 2, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::crossref", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Crossref"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Beilstein Institut"
+                    }
+                ], 
+                "Title": "Catalytic Chan\u2013Lam coupling using a \u2018tube-in-tube\u2019 reactor to deliver molecular oxygen as an oxidant", 
+                "Creator": [], 
+                "PublicationDate": "2016-07-26T14:19:12Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.3762/bjoc.12.156", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.3762/bjoc.12.156"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::1570ab0e6ee577ae1689a8a89f89d54d", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::1570ab0e6ee577ae1689a8a89f89d54d"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1479349: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Walter, Gary C."
+                    }, 
+                    {
+                        "Name": "Burton, Paul M."
+                    }, 
+                    {
+                        "Name": "Mallia, Carl J."
+                    }, 
+                    {
+                        "Name": "Smith, Alexander M. R."
+                    }, 
+                    {
+                        "Name": "Baxendale, Ian R."
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1lncyk", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1lncyk"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d7bfbf786bec33c82b16f617a57ed1db", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d7bfbf786bec33c82b16f617a57ed1db"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "unknown", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsRelatedTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Beilstein Institut"
+                    }
+                ], 
+                "Title": "Catalytic Chan\u2013Lam coupling using a \u2018tube-in-tube\u2019 reactor to deliver molecular oxygen as an oxidant", 
+                "Creator": [], 
+                "PublicationDate": "2016-07-26T14:19:12Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.3762/bjoc.12.156", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.3762/bjoc.12.156"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::1570ab0e6ee577ae1689a8a89f89d54d", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::1570ab0e6ee577ae1689a8a89f89d54d"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1479349: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Walter, Gary C."
+                    }, 
+                    {
+                        "Name": "Burton, Paul M."
+                    }, 
+                    {
+                        "Name": "Mallia, Carl J."
+                    }, 
+                    {
+                        "Name": "Smith, Alexander M. R."
+                    }, 
+                    {
+                        "Name": "Baxendale, Ian R."
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1lncyk", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1lncyk"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d7bfbf786bec33c82b16f617a57ed1db", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d7bfbf786bec33c82b16f617a57ed1db"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 3, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578844: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxg1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxg1"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578846: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxj3", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxj3"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578845: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxh2", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxh2"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 3, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578844: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxg1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxg1"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578846: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxj3", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxj3"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578845: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxh2", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxh2"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 3, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578844: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxg1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxg1"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578846: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxj3", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxj3"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578845: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxh2", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxh2"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 3, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578844: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxg1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxg1"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578846: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxj3", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxj3"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578845: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxh2", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxh2"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 3, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578844: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxg1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxg1"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578846: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxj3", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxj3"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578845: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxh2", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxh2"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 1, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "International Union of Crystallography (IUCr)"
+                    }
+                ], 
+                "Title": "Di-\u03bc-chloro-bis{bis4-(2-pyridyl)benzaldehyde-\u03ba2C2,N\u2032iridium} dichloromethane sesquisolvate", 
+                "Creator": [], 
+                "PublicationDate": "2004-06-03T09:18:52Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1107/s1600536804011663", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1107/s1600536804011663"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::d721cc8d4fe08396fb3af2906727af3d", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::d721cc8d4fe08396fb3af2906727af3d"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 242056: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Beeby, A."
+                    }, 
+                    {
+                        "Name": "Goeta, A.E."
+                    }, 
+                    {
+                        "Name": "Thompson, A.L."
+                    }, 
+                    {
+                        "Name": "Bettington, S."
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/cc83w8h", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/cc83w8h"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::7445fe7987826e9019b7564542796442", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::7445fe7987826e9019b7564542796442"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 2, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Brill"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior Through a Neural Network of the Audiovisual Perception of Space", 
+                "Creator": [], 
+                "PublicationDate": "2019-02-08T07:40:35Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1163/22134808-20191324", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1163/22134808-20191324"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Figshare"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior through a Neural Network of the Audiovisual Perception of Space: Supplementary Material", 
+                "Creator": [
+                    {
+                        "Name": "Beierholm, Ulrik"
+                    }, 
+                    {
+                        "Name": "Magosso, Elisa"
+                    }, 
+                    {
+                        "Name": "Cuppini, Cristiano"
+                    }, 
+                    {
+                        "Name": "Ursino, Mauro"
+                    }, 
+                    {
+                        "Name": "Shams, Ladan"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.6084/m9.figshare.7637489", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.6084/m9.figshare.7637489"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::0ae1e354c7efff7398b3983cb48b9165", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::0ae1e354c7efff7398b3983cb48b9165"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Brill"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior Through a Neural Network of the Audiovisual Perception of Space", 
+                "Creator": [], 
+                "PublicationDate": "2019-02-08T07:40:35Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1163/22134808-20191324", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1163/22134808-20191324"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Figshare"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior through a Neural Network of the Audiovisual Perception of Space: Supplementary Material", 
+                "Creator": [
+                    {
+                        "Name": "Beierholm, Ulrik"
+                    }, 
+                    {
+                        "Name": "Magosso, Elisa"
+                    }, 
+                    {
+                        "Name": "Cuppini, Cristiano"
+                    }, 
+                    {
+                        "Name": "Ursino, Mauro"
+                    }, 
+                    {
+                        "Name": "Shams, Ladan"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.6084/m9.figshare.7637489.v1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.6084/m9.figshare.7637489.v1"
+                    }, 
+                    {
+                        "ID": "60|datacite____::a5aa6119b8e102fe470c48f08cb39465", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|datacite____::a5aa6119b8e102fe470c48f08cb39465"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 3, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578844: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxg1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxg1"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::681ff4368ad27a0b5c276d32a8a51000"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578846: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxj3", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxj3"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::d1c4fa1dc652cffb5ec22cecc26b1565"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Royal Society of Chemistry (RSC)"
+                    }
+                ], 
+                "Title": "Conductance of \u2018bare-bones\u2019 tripodal molecular wires", 
+                "Creator": [], 
+                "PublicationDate": "2018-06-28T07:04:03Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1039/c8ra01257a", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1039/c8ra01257a"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::83ac330bb2e5dffab751b28553bbf5d8"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 1578845: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Milan, David C."
+                    }, 
+                    {
+                        "Name": "Al-Owaedi, Oday A."
+                    }, 
+                    {
+                        "Name": "Higgins, Simon J."
+                    }, 
+                    {
+                        "Name": "Yufit, Dmitry S."
+                    }, 
+                    {
+                        "Name": "Nichols, Richard J."
+                    }, 
+                    {
+                        "Name": "Davidson, Ross J."
+                    }, 
+                    {
+                        "Name": "Ismael, Ali K."
+                    }, 
+                    {
+                        "Name": "Lambert, Colin J."
+                    }, 
+                    {
+                        "Name": "Beeby, Andrew"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/ccdc.csd.cc1pzxh2", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/ccdc.csd.cc1pzxh2"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::635333e9521be9dd5bc8709184ff526b"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 1, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::r3d100010197", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Cambridge Crystallographic Data Centre"
+                }, 
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "International Union of Crystallography (IUCr)"
+                    }
+                ], 
+                "Title": "Di-\u03bc-chloro-bis{bis4-(2-pyridyl)benzaldehyde-\u03ba2C2,N\u2032iridium} dichloromethane sesquisolvate", 
+                "Creator": [], 
+                "PublicationDate": "2004-06-03T09:18:52Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1107/s1600536804011663", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1107/s1600536804011663"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::d721cc8d4fe08396fb3af2906727af3d", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::d721cc8d4fe08396fb3af2906727af3d"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Cambridge Crystallographic Data Centre"
+                    }
+                ], 
+                "Title": "CCDC 242056: Experimental Crystal Structure Determination", 
+                "Creator": [
+                    {
+                        "Name": "Beeby, A."
+                    }, 
+                    {
+                        "Name": "Goeta, A.E."
+                    }, 
+                    {
+                        "Name": "Thompson, A.L."
+                    }, 
+                    {
+                        "Name": "Bettington, S."
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.5517/cc83w8h", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.5517/cc83w8h"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::7445fe7987826e9019b7564542796442", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::7445fe7987826e9019b7564542796442"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}{
+    "totalPages": 1, 
+    "currentPage": 0, 
+    "totalLinks": 2, 
+    "result": [
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Brill"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior Through a Neural Network of the Audiovisual Perception of Space", 
+                "Creator": [], 
+                "PublicationDate": "2019-02-08T07:40:35Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1163/22134808-20191324", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1163/22134808-20191324"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Figshare"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior through a Neural Network of the Audiovisual Perception of Space: Supplementary Material", 
+                "Creator": [
+                    {
+                        "Name": "Beierholm, Ulrik"
+                    }, 
+                    {
+                        "Name": "Magosso, Elisa"
+                    }, 
+                    {
+                        "Name": "Cuppini, Cristiano"
+                    }, 
+                    {
+                        "Name": "Ursino, Mauro"
+                    }, 
+                    {
+                        "Name": "Shams, Ladan"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.6084/m9.figshare.7637489", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.6084/m9.figshare.7637489"
+                    }, 
+                    {
+                        "ID": "60|dedup_wf_001::0ae1e354c7efff7398b3983cb48b9165", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|dedup_wf_001::0ae1e354c7efff7398b3983cb48b9165"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }, 
+        {
+            "LinkProvider": [
+                {
+                    "identifier": [
+                        {
+                            "ID": "dli_________::datacite", 
+                            "IDScheme": "dnetIdentifier"
+                        }
+                    ], 
+                    "name": "Datasets in Datacite"
+                }
+            ], 
+            "target": {
+                "Publisher": [
+                    {
+                        "name": "Brill"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior Through a Neural Network of the Audiovisual Perception of Space", 
+                "Creator": [], 
+                "PublicationDate": "2019-02-08T07:40:35Z", 
+                "Identifier": [
+                    {
+                        "ID": "10.1163/22134808-20191324", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.1163/22134808-20191324"
+                    }, 
+                    {
+                        "ID": "50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/50|dli_resolver::bae8758cf4e93554e2885fc0a7e659d0"
+                    }
+                ], 
+                "Type": "literature"
+            }, 
+            "source": {
+                "Publisher": [
+                    {
+                        "name": "Figshare"
+                    }
+                ], 
+                "Title": "Explaining the Effect of Likelihood Manipulation and Prior through a Neural Network of the Audiovisual Perception of Space: Supplementary Material", 
+                "Creator": [
+                    {
+                        "Name": "Beierholm, Ulrik"
+                    }, 
+                    {
+                        "Name": "Magosso, Elisa"
+                    }, 
+                    {
+                        "Name": "Cuppini, Cristiano"
+                    }, 
+                    {
+                        "Name": "Ursino, Mauro"
+                    }, 
+                    {
+                        "Name": "Shams, Ladan"
+                    }
+                ], 
+                "PublicationDate": "", 
+                "Identifier": [
+                    {
+                        "ID": "10.6084/m9.figshare.7637489.v1", 
+                        "IDScheme": "doi", 
+                        "IDURL": "http://dx.doi.org/10.6084/m9.figshare.7637489.v1"
+                    }, 
+                    {
+                        "ID": "60|datacite____::a5aa6119b8e102fe470c48f08cb39465", 
+                        "IDScheme": "D-Net Identifier", 
+                        "IDURL": "http://scholexplorer.openaire.eu/index.html#/detail/60|datacite____::a5aa6119b8e102fe470c48f08cb39465"
+                    }
+                ], 
+                "Type": "dataset"
+            }, 
+            "LinkPublicationDate": "2019-03-19", 
+            "HarvestedDate": "2019-03-19", 
+            "RelationshipType": {
+                "SubType": "isSupplementTo", 
+                "SubTypeSchema": "datacite", 
+                "Name": "IsSupplementTo"
+            }
+        }
+    ]
+}
