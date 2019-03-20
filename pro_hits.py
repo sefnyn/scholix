@@ -3,7 +3,6 @@
 import fileinput
 import json
 import requests
-import sys
 
 DURHAM_DATACITE_PREFIX = '10.15128'
 API = 'http://api.scholexplorer.openaire.eu/v2/Links'
@@ -16,6 +15,7 @@ mydict = {}
 print('opening file for JSON records: ' + data)
 g = open(data, 'a')
 fh = open(links, 'w')
+fh.write('hello')
 
 for dro_doi in fileinput.input():
     if not dro_doi.strip():
@@ -40,23 +40,23 @@ for dro_doi in fileinput.input():
                     source = link['source']
                     print('Source: ')
                     print(source)
-                    ids = source['Identifier']
+                    idict = source['Identifier']
                     pub = source['Publisher']
-                    print('Ids: ')
-                    print(ids)
-                    for idict in ids:
-                        data_doi = idict['ID']
+                    for id in idict:
+                        data_doi = id['ID']
                         if data_doi.startswith(DURHAM_DATACITE_PREFIX):
                             #Looks like this link points to DRO-DATA; ignore it........
-                            print('Nada')
+                            print('Ignoring link to DRO-DATA')
                         else:
-                            scheme = idict['IDScheme']
+                            #process id
+                            scheme = id['IDScheme']
+                            found = 0
                             if scheme == 'doi':
-                                found = 0
-                        if d == data_doi:
-			                found = 1
-                    if found == 0:		
-                        mylist.append(data_doi)
+                                for d in mylist:
+                                    if d == data_doi:
+                                        found = 1
+                                if found == 0:		
+                                    mylist.append(data_doi)
                             else:
                                 try:
                                     val = myscheme[scheme]
@@ -64,14 +64,16 @@ for dro_doi in fileinput.input():
                                     myscheme[scheme] = val
                                 except KeyError:
                                     myscheme[scheme] = 1
-	    mystr = ""
-	    for d in mylist:
-		mystr += d + '\t'
-            mydict[dro_doi.rstrip()] = mystr
+            mystr = ""
+            for d in mylist:
+                mystr += d + '\t'
+            mydict[dro_doi.rstrip()] = mystr.rstrip()
         except ValueError:
             print('invalid JSON')
-for d in mydict:
-    fh.write(d + '\t' + mydict[d] + '\n')
+for doi in mydict:
+    fh.write(doi + '\t' + mydict[doi] + '\n')
+
+
 print('Dictionary: ')
 print(mydict)
 print('Schemes: ')
