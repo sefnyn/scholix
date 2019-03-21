@@ -16,8 +16,6 @@ def make_data_citation(creator_list, pub_year, title, pub_list, mat_type, doi):
         creators = creators + creator_list[index]['Name'] + ' ; '
     if pub_year == "":
         pub_year = "n.d."
-    else:
-        raise SystemExit("Found a pub year: " + pub_year)
     return creators[:-3] + "  (" + pub_year + '):  ' + title + ".  " + pub_names[:-3] + ".  [" + mat_type + "]  DOI: http://doi.org/" + doi
     
     
@@ -27,15 +25,18 @@ def main():
     data = 'records.json'
     links = 'links.tsv'
     citations = 'citations.txt'
+    logfile = 'logfile.log'
     mydata = {} #dict where key is dro_doi and value is json record describing research data
     myscheme = {}
     mydict = {}
     count = 0
+    types = {"dataset", "literature", "unknown"}
     
     print('opening file for JSON records: ' + data)
     g = open(data, 'a')
     fh = open(links, 'w')
     bib = open(citations,  'w')
+    log = open(logfile, 'w')
     
     for dro_doi in fileinput.input():
         count += 1
@@ -55,7 +56,7 @@ def main():
                 myres = data['result']
                 mylist = []
                 if len(myres) == 0:
-                    raise SystemExit('Did not find research data for doi ' + dro_doi)
+                    log.write('Did not find research data for doi ' + dro_doi + '\n')
                 else:
                     #process data
                     for link in myres:
@@ -66,6 +67,8 @@ def main():
                         pub_list = source['Publisher'] #list of pubs
                         title = source['Title']
                         mat_type = source['Type']
+                        if mat_type not in types:
+                            log.write("Found mat type: " + mat_type + "\n")
                         creator_list = source['Creator'] #list of creators
                         idict = source['Identifier']
                         for id in idict:
@@ -73,6 +76,7 @@ def main():
                             if data_doi.startswith(DURHAM_DATACITE_PREFIX):
                                 #Looks like this link points to DRO-DATA; ignore it........
                                 print('Ignoring link to DRO-DATA')
+                                log.write("Ignoring link to Durham data repo\n")
                                 mydict[data_doi] = '************** DURHAM DATA REPOSITORY *****************'
                                 mylist=[]
                             else:
@@ -103,6 +107,7 @@ def main():
                     mydict[dro_doi.rstrip()] = mystr.rstrip()
             except ValueError:
                 print('invalid JSON')
+                log.write("Invalid JSON\n")
     for doi in mydict:
         fh.write(doi + '\t' + mydict[doi] + '\n')
     fh.close()
