@@ -4,12 +4,21 @@ import fileinput
 import json
 import requests
 
-def make_data_citation():
-     for index in range(len(pub_list)):
-        pub_names = pub_list[index]['name'] + ' ; '
-     for thingey in range(len(creator_list)):
-        creators = creator_list[thingey]['Name'] + ' ; '
-    bib.write(creators + pub_date + ':  ' + title + pub_names + '  DOI: http://doi.org' + data_doi + '\n')
+def make_data_citation(creator_list, pub_year, title, pub_list, mat_type, doi):
+    """ Returns one data citation:
+            Creators (Pub year):  Title.  Publishers.  [material type]  DOI: http://doi.org/...
+    """
+    pub_names = ""
+    creators = ""
+    for index in range(len(pub_list)):
+        pub_names = pub_names + pub_list[index]['name'] + ' ; '
+    for index in range(len(creator_list)):
+        creators = creators + creator_list[index]['Name'] + ' ; '
+    if pub_year == "":
+        pub_year = "n.d."
+    else:
+        raise SystemExit("Found a pub year: " + pub_year)
+    return creators[:-3] + "  (" + pub_year + '):  ' + title + ".  " + pub_names[:-3] + ".  [" + mat_type + "]  DOI: http://doi.org/" + doi
     
     
 def main():
@@ -21,6 +30,7 @@ def main():
     mydata = {} #dict where key is dro_doi and value is json record describing research data
     myscheme = {}
     mydict = {}
+    count = 0
     
     print('opening file for JSON records: ' + data)
     g = open(data, 'a')
@@ -28,6 +38,8 @@ def main():
     bib = open(citations,  'w')
     
     for dro_doi in fileinput.input():
+        count += 1
+        print("##################\n########  " + str(count ) + "  #######\n####################")
         if not dro_doi.strip():
             #do nothing
             print('found empty line...ignored')
@@ -48,10 +60,12 @@ def main():
                     #process data
                     for link in myres:
                         source = link['source']
-                        pub_date = source['PublicationDate'][0:3] #just want the pub year
-                        pub_list = source['Publisher']
+                        pub_date = source['PublicationDate']
+                        if pub_date == None: pub_date == "" 
+                        #pub_date = pub_date[0:3] #just want the pub year
+                        pub_list = source['Publisher'] #list of pubs
                         title = source['Title']
-                        type = source['Type']
+                        mat_type = source['Type']
                         creator_list = source['Creator'] #list of creators
                         idict = source['Identifier']
                         for id in idict:
@@ -72,7 +86,9 @@ def main():
                                             found = 1
                                     if found == 0:		
                                         mylist.append(data_doi)
-                                        make_data_citation()
+                                        bib_rec = make_data_citation(creator_list, pub_date, title, pub_list, mat_type, data_doi)
+                                        print(bib_rec)
+                                        bib.write(bib_rec + '\n\n')
                                 else:
                                     try:
                                         val = myscheme[scheme]
