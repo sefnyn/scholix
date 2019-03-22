@@ -4,14 +4,11 @@ import fileinput
 import json
 import requests
 
-def make_data_citation(creator_list, pub_year, title, pub_list, mat_type, doi):
+def make_data_citation(creator_list, pub_year, title, pub_names, mat_type, doi):
     """ Returns one data citation:
             Creators (Pub year):  Title.  Publishers.  [material type]  DOI: http://doi.org/...
     """
-    pub_names = ""
     creators = ""
-    for index in range(len(pub_list)):
-        pub_names = pub_names + pub_list[index]['name'] + ' ; '
     for index in range(len(creator_list)):
         creators = creators + creator_list[index]['Name'] + ' ; '
     if pub_year == "":
@@ -30,11 +27,13 @@ def main():
     myscheme = {}
     mydict = {}
     count = 0
-    types = {"dataset", "literature", "unknown"}
+    types = {}
+    pubs = {}
+    pub_names = ""
     
     print('opening file for JSON records: ' + data)
-    g = open(data, 'a')
-    fh = open(links, 'w')
+    j = open(data, 'a')
+    tsv = open(links, 'w')
     bib = open(citations,  'w')
     log = open(logfile, 'w')
     
@@ -48,15 +47,20 @@ def main():
         payload = {'targetPid': dro_doi.rstrip()}
         r = requests.get(API, params=payload)
         if r.raise_for_status() == None:
-            print('************************************ Processing doi ' + dro_doi)
+            print('Processing doi ' + dro_doi)
+            log.write('Processing doi ' + dro_doi.rstrip())
             try:
                 data = r.json()
+            except ValueError:
+                print('Invalid JSON')
+                log.write("........Invalid JSON")
+            else:
                 json_string = json.dumps(data, indent=4)
-                g.write(json_string)
+                j.write(json_string)
                 myres = data['result']
                 mylist = []
                 if len(myres) == 0:
-                    log.write('Did not find research data for doi ' + dro_doi + '\n')
+                    log.write("........did not find research data for DRO DOI")
                 else:
                     #process data
                     for link in myres:
@@ -65,10 +69,10 @@ def main():
                         if pub_date == None: pub_date == "" 
                         #pub_date = pub_date[0:3] #just want the pub year
                         pub_list = source['Publisher'] #list of pubs
+                        for index in range(len(pub_list)):
+                            pub_names = pub_names + pub_list[index]['name'] + ' ; '
                         title = source['Title']
                         mat_type = source['Type']
-                        if mat_type not in types:
-                            log.write("Found mat type: " + mat_type + "\n")
                         creator_list = source['Creator'] #list of creators
                         idict = source['Identifier']
                         for id in idict:
@@ -76,7 +80,7 @@ def main():
                             if data_doi.startswith(DURHAM_DATACITE_PREFIX):
                                 #Looks like this link points to DRO-DATA; ignore it........
                                 print('Ignoring link to DRO-DATA')
-                                log.write("Ignoring link to Durham data repo\n")
+                                log.write("........Ignoring link to Durham data repo")
                                 mydict[data_doi] = '************** DURHAM DATA REPOSITORY *****************'
                                 mylist=[]
                             else:
@@ -89,10 +93,16 @@ def main():
                                         if d == data_doi:
                                             found = 1
                                     if found == 0:		
+                                        try:
+                                            val = types[mat_type]
+                                            types[mat_type] += 1
+                                        except KeyError:
+                                            types[mat_type] = 1
                                         mylist.append(data_doi)
-                                        bib_rec = make_data_citation(creator_list, pub_date, title, pub_list, mat_type, data_doi)
+                                        bib_rec = make_data_citation(creator_list, pub_date, title, pub_names, mat_type, data_doi)
                                         print(bib_rec)
-                                        bib.write(bib_rec + '\n\n')
+                                        bib.write(bib_rec.encode('utf-8') + '\n\n')
+                                        log.write("........success!")
                                 else:
                                     try:
                                         val = myscheme[scheme]
@@ -105,17 +115,17 @@ def main():
                     for d in mylist:
                         mystr += d + '\t'
                     mydict[dro_doi.rstrip()] = mystr.rstrip()
-            except ValueError:
-                print('invalid JSON')
-                log.write("Invalid JSON\n")
+            log.write("\n")
     for doi in mydict:
-        fh.write(doi + '\t' + mydict[doi] + '\n')
-    fh.close()
+        tsv.write(doi + '\t' + mydict[doi] + '\n')
+    tsv.close()
     
     print('Dictionary: ')
     print(mydict)
     print('Schemes: ')
     print(myscheme)
+    print('Material types: ')
+    print(types)
     
 if __name__ == "__main__":
 	main()
