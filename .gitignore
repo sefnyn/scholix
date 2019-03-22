@@ -1,5 +1,6 @@
 citations.txt
 records.json
-links.tsv
 hits
 logfile.log
+*.csv
+*.tsv

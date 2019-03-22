@@ -14,12 +14,15 @@ success = 0
 no_link = 0
 found = []
 links = {} #dict where key is dro-doi and value is json record describing research data
+count = 0
 
 print('opening output file ' + out)
 g = open(out, 'w')
 fh = open(hits, 'w')
 
 for doi in fileinput.input():
+    count += 1
+    print("################  " + str(count) + "  #################")
     if not doi.strip():
         #do nothing
         print('found empty line...ignored')
@@ -40,18 +43,17 @@ for doi in fileinput.input():
             if len(res) > 0:
                 #print(res)
                 success += 1
-                found.append(doi)
+                fh.write(doi)
             else:
                 print('Did not find any research data for doi ' + doi)
                 no_link += 1
         except ValueError:
-            print('invalid JSON')
+            print('Invalid JSON')
 """     json_string = json.dumps(r.json())
         print(json_string)
         print('\n')
 """
-for item in found:
-    fh.write(item)
+fh.close()
 print('Total DOIs in sample ' + str(success + no_link))
 print('Links found ' + str(success))
 print('Did not find a link ' + str(no_link))
