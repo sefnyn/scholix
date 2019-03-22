@@ -29,7 +29,6 @@ def main():
     count = 0
     types = {}
     pubs = {}
-    pub_names = ""
     
     print('opening file for JSON records: ' + data)
     j = open(data, 'a')
@@ -69,6 +68,7 @@ def main():
                         if pub_date == None: pub_date == "" 
                         #pub_date = pub_date[0:3] #just want the pub year
                         pub_list = source['Publisher'] #list of pubs
+                        pub_names = ""
                         for index in range(len(pub_list)):
                             pub_names = pub_names + pub_list[index]['name'] + ' ; '
                         title = source['Title']
