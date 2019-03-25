@@ -81,7 +81,7 @@ def main():
                                 #Looks like this link points to DRO-DATA; ignore it........
                                 print('Ignoring link to DRO-DATA')
                                 log.write("........Ignoring link to Durham data repo")
-                                mydict[data_doi] = '************** DURHAM DATA REPOSITORY *****************'
+                                mydict[dro_doi.rstrip()] = '******* DURHAM DATA REPOSITORY *******  ' + data_doi
                                 mylist=[]
                             else:
                                 #process id
