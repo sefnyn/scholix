@@ -1,6 +1,7 @@
-citations.txt
 records.json
 hits
 logfile.log
 *.csv
+*.txt
 *.tsv
+scheme
