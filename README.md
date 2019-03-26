@@ -35,7 +35,9 @@ File format is: DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...
 
 This file includes data DOIs pointing to the Durham research data repository and are included for completeness.
 >10.1021/ol801121p	10.5517/ccqt7yp	10.5517/ccqt7wm	10.5517/ccqt7xn
+
 >10.1016/j.compstruc.2017.05.004	******* DURHAM DATA REPOSITORY *******  10.15128/r1n870zq804
+
 >10.1186/s40814-016-0053-3	10.6084/m9.figshare.c.3610439_d1	10.6084/m9.figshare.c.3610439_d1.v1	10.6084/m9.figshare.c.3610439
 
 Remove lines containing DURHAM DATA REPOSITORY:
@@ -49,4 +51,7 @@ Output file: citations.txt
 >Aguilar, Juan A. ; Gimenez, Diana ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567327: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxy4
 
 
-
+Output file: logfile.log
+>Processing doi 10.1680/jgele.17.00081........Ignoring link to Durham data repo
+>Processing doi 10.1186/s40814-016-0053-3........success!........success!........success!
+>Processing doi 10.1002/anie.201309680........success!
