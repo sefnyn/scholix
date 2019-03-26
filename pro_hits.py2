@@ -64,9 +64,14 @@ def main():
                     #process data
                     for link in myres:
                         source = link['source']
-                        pub_date = source['PublicationDate']
-                        if pub_date == None: pub_date == "" 
-                        #pub_date = pub_date[0:3] #just want the pub year
+                        target = link['target'] #to get pub date
+                        pub_date = target['PublicationDate']
+                        if pub_date == None: 
+                            pub_date == ""
+                        elif pub_date == "":
+                            pass
+                        else:
+                            pub_date = pub_date[0:4] #just want the pub year
                         pub_list = source['Publisher'] #list of pubs
                         pub_names = ""
                         for index in range(len(pub_list)):
