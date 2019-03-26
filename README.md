@@ -1,6 +1,6 @@
 # Find links between Durham research outputs and Durham research data
 
-##History
+## History
 The list of research output DOIs was created by the Repository Manager on 14/3/2019.
 This list is the input file.
 
