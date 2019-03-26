@@ -13,8 +13,8 @@ def make_data_citation(creator_list, pub_year, title, pub_names, mat_type, doi):
         creators = creators + creator_list[index]['Name'] + ' ; '
     if pub_year == "":
         pub_year = "n.d."
-    return creators[:-3] + "  (" + pub_year + '):  ' + title + ".  " + pub_names[:-3] + ".  [" + mat_type + "]  DOI: http://doi.org/" + doi
-    
+    ret_string = creators[:-3] + "  (" + str(pub_year) + "):  " + title + ".  " + pub_names[:-3] + ".  [" + mat_type + "]  DOI: http://doi.org/" + doi
+    return ret_string
     
 def main():
     DURHAM_DATACITE_PREFIX = '10.15128'
