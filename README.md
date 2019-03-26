@@ -1,11 +1,11 @@
-#Find links between Durham research outputs and Durham research data
+# Find links between Durham research outputs and Durham research data
 
-##History
+## History
 The list of DRO DOIs was created by Heather on 14/3/2019.
 This list is the input file.
 
 
-##Query Scholix API script: query.py2
+## Query Scholix API script: query.py2
 The script takes one command line parameter; namely, a file containing DRO DOIs.
 
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
@@ -19,6 +19,6 @@ Output file: hits
 10.1163/22134808-20191324
 
 
-##Process hits: pro_hits.py2
+## Process hits: pro_hits.py2
 
 
