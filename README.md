@@ -6,7 +6,7 @@ This list is the input file.
 
 
 ## Query Scholix API script: **query.py2**
-The script takes one command line parameter; namely, a file containing DRO DOIs.
+The script takes one command line parameter; namely, a file containing DOIs from our repository, Durham Research Online.
 
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
 
