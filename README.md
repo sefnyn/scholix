@@ -31,7 +31,7 @@ The script creates several output files:
 - logfile.log
 
 Output file: **links.tsv**
-File format is: 
+File format is:  
 **DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...**
 
 This file includes data DOIs pointing to the Durham research data repository and are included for completeness.  For example:  
@@ -42,10 +42,12 @@ This file includes data DOIs pointing to the Durham research data repository and
 Remove lines containing DURHAM DATA REPOSITORY:
 >grep -v DURHAM links.tsv > linksWithoutDurham.tsv
 
-Output file: **citations.txt**  
-Šibalić, N.  (2017):  ARC: An open-source library for calculating properties of alkali Rydberg atoms.  Mendeley.  [dataset]  DOI: http://doi.org/10.17632/hm5n8w628c.1  
-Addison, John T. ; Teixeira, Paulino  (2019):  Workplace Employee Representation and Industrial Relations Performance ‘(replication data)’..  ZBW - Leibniz Informationszentrum Wirtschaft.  [dataset]  DOI: http://doi.org/10.15456/jbnst.2018197.152711  
-Aguilar, Juan A. ; Gimenez, Diana ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567327: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxy4
+Output file: **citations.txt**  [lines do not wrap in the file but appear to wrap here]
+>Šibalić, N.  (2017):  ARC: An open-source library for calculating properties of alkali Rydberg atoms.  Mendeley.  [dataset]  DOI: http://doi.org/10.17632/hm5n8w628c.1  
+>
+>Addison, John T. ; Teixeira, Paulino  (2019):  Workplace Employee Representation and Industrial Relations Performance ‘(replication data)’..  ZBW - Leibniz Informationszentrum Wirtschaft.  [dataset]  DOI: http://doi.org/10.15456/jbnst.2018197.152711  
+>
+>Aguilar, Juan A. ; Gimenez, Diana ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567327: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxy4
 
 
 Output file: **logfile.log**  
