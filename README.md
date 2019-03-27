@@ -14,9 +14,9 @@ Execute script
 > python query.py2 testDOI.csv
 
 Output file: **hits**
->10.1039/c8ra01257a
->10.1107/S1600536804011663
->10.1163/22134808-20191324
+10.1039/c8ra01257a  
+10.1107/S1600536804011663  
+10.1163/22134808-20191324
 
 
 ##Process hits: **pro_hits.py2**
