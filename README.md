@@ -31,12 +31,13 @@ The script creates several output files:
 - logfile.log
 
 Output file: **links.tsv**
-File format is: DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...
+File format is: 
+**DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...**
 
-This file includes data DOIs pointing to the Durham research data repository and are included for completeness.  
->10.1021/ol801121p	10.5517/ccqt7yp	10.5517/ccqt7wm	10.5517/ccqt7xn  
->10.1016/j.compstruc.2017.05.004	******* DURHAM DATA REPOSITORY *******  10.15128/r1n870zq804  
->10.1186/s40814-016-0053-3	10.6084/m9.figshare.c.3610439_d1	10.6084/m9.figshare.c.3610439_d1.v1
+This file includes data DOIs pointing to the Durham research data repository and are included for completeness.  For example:  
+10.1021/ol801121p	10.5517/ccqt7yp	10.5517/ccqt7wm	10.5517/ccqt7xn  
+10.1016/j.compstruc.2017.05.004	******* DURHAM DATA REPOSITORY *******  10.15128/r1n870zq804  
+10.1186/s40814-016-0053-3	10.6084/m9.figshare.c.3610439_d1	10.6084/m9.figshare.c.3610439_d1.v1
 
 Remove lines containing DURHAM DATA REPOSITORY:
 >grep -v DURHAM links.tsv > linksWithoutDurham.tsv
