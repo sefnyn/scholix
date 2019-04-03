@@ -19,7 +19,7 @@ Output file: **hits**
 10.1163/22134808-20191324
 
 
-##Process hits: **pro_hits.py2**
+## Process hits: **pro_hits.py2**
 Like query.py2, this script makes one API call for every DOI in the input file.
 
 Execute script
