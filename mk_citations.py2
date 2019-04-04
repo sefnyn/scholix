@@ -1,17 +1,21 @@
-#Process Durham Research Online DOIs with positive links to research data
+#Process research output DOIs with positive links to research data
 
 import fileinput
 import json
 import requests
 
-DURHAM_DATACITE_PREFIX = '10.15128'
+DATACITE_PREFIX = '10.15128'  #DURHAM prefix
+LOCAL_REPO = '******* DURHAM DATA REPOSITORY *******  ' 
 API = 'http://api.scholexplorer.openaire.eu/v2/Links'
 
 
 def process_result(my_result, doi, doi_links, bib, log):
+    """ Returns a list of research data DOIs linked with exactly one research output DOI.
+
+    """
     dois_found = []
     if len(my_result) == 0:
-        log.write("........did not find research data for DRO DOI")
+        log.write("........did not find research data for research ouput DOI")
     else:
         #process data
         for link in my_result:
@@ -34,11 +38,11 @@ def process_result(my_result, doi, doi_links, bib, log):
             idict = source['Identifier']
             for id in idict:
                 data_doi = id['ID']
-                if data_doi.startswith(DURHAM_DATACITE_PREFIX):
-                    #Looks like this link points to DRO-DATA; ignore it........
-                    print('Ignoring link to DRO-DATA')
-                    log.write("........Ignoring link to Durham data repo")
-                    doi_links[doi] = '******* DURHAM DATA REPOSITORY *******  ' + data_doi
+                if data_doi.startswith(DATACITE_PREFIX):
+                    #Looks like this link points to local data repository; ignore it........
+                    print('Ignoring link to local data repository')
+                    log.write("........Ignoring link to local data repository")
+                    doi_links[doi] = LOCAL_REPO + data_doi
                     mylist = []
                 else:
                     #process id
@@ -58,8 +62,8 @@ def process_result(my_result, doi, doi_links, bib, log):
         return dois_found
 
 def make_data_citation(creator_list, pub_year, title, pub_names, mat_type, doi):
-    """ Returns one data citation:
-            Creators (Pub year):  Title.  Publishers.  [material type]  DOI: http://doi.org/...
+    """ Returns one data citation of type str.  The citation is in DataCite format except material type enclosed in square brackets instead of parentheses.
+            Creator01 ; Creator02 ; Creator03 ... (Pub year):  Title.  Publisher01 ; Publisher02 ....  [material type]  DOI: http://doi.org/...
     """
     creators = ""
     for index in range(len(creator_list)):
@@ -78,7 +82,7 @@ def main():
     count = 0
   
     print('opening file for JSON records: ' + data)
-    j = open(data, 'a')
+    j = open(data, 'w')
     tsv = open(links, 'w')
     bib = open(citations,  'w')
     log = open(logfile, 'w')
