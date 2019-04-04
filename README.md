@@ -1,4 +1,4 @@
-# Find links between Durham research outputs and Durham research data
+# Find links between research outputs and research data in other data repositories
 
 ## History
 The list of research output DOIs was created by the Repository Manager on 14/3/2019.
@@ -6,7 +6,7 @@ This list is the input file.
 
 
 ## Query Scholix API script: **query.py2**
-The script takes one command line parameter; namely, a file containing DOIs from our repository, Durham Research Online.
+The script takes one command line parameter; namely, a file containing DOIs from our repository containing research outputs.
 
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
 
@@ -19,15 +19,16 @@ Output file: **hits**
 10.1163/22134808-20191324
 
 
-##Process hits: **pro_hits.py2**
+## Make citations: **mk_citations.py2**
 Like query.py2, this script makes one API call for every DOI in the input file.
 
 Execute script
-> python pro_hits.py2 hits
+> python mk_citations.py2 hits
 
 The script creates several output files:
 - links.tsv
 - citations.txt
+- records.json
 - logfile.log
 
 Output file: **links.tsv**
@@ -51,7 +52,7 @@ Output file: **citations.txt**  [lines appear to wrap here but do not wrap in th
 
 
 Output file: **logfile.log**  
-Processing doi 10.1680/jgele.17.00081........Ignoring link to Durham data repo  
+Processing doi 10.1680/jgele.17.00081........Ignoring link to local data repoository  
 Processing doi 10.1186/s40814-016-0053-3........success!........success!........success!  
 Processing doi 10.1002/anie.201309680........success!
 
