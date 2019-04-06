@@ -1,6 +1,6 @@
-records.json
+*.json
 hits
-logfile.log
+*.log
 *.csv
 *.txt
 *.tsv
