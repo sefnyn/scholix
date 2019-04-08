@@ -1,8 +1,19 @@
 #Post JSON data to data repository
 
 """
-TEST:
-curl -X POST -H "Content-type: application/json" -u qgkb58 --insecure -d file.json <SERVER>
+This implementation has been tested on Sufia/Hydra v.6.3.0:
+(1) Sufia/Hydra API modified to accept JSON data without depositing research data
+(2) Sufia/Hydra API modified to allow HTTP basic authentication by repository admin users only
+
+What this script does:
+
+For each research paper DOI, create one deposit record in the local data repository.
+The record will contain all research data DOIs associated with the research paper.
+
+
+Create record in test repo using curl command:
+
+curl -X POST -H "Content-type: application/json" -u <USERNAME > --insecure -d file.json <SERVER>
 """
 
 JSON_TEMPLATE = {
@@ -44,7 +55,7 @@ JSON_TEMPLATE = {
 import fileinput
 import json
 import requests
-import getpass
+import getpass #hides password of admin user
 from requests.auth import HTTPBasicAuth
 
 
@@ -107,16 +118,18 @@ def post_result(my_result, doi, username, pwd, log):
                                 found = 1
                         if found == 0:
                             dois_found.append(data_doi)
-                            gen_file = json_data['generic_file']
-                            title = title + " [dataset]"
-                            gen_file['title'].append(title)
-                            gen_file['resource_type'].append(RESOURCE_TYPE)
-                            gen_file['description'].append(DEPOSIT_DESCRIPTION)
-                            gen_file['related_url'].append(doi)
-                            gen_file['identifier'].append(data_doi)
-                            gen_file['publisher'].append(pub_names)
-                            r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
-        return r
+            if len(dois_found) > 0:
+                gen_file = json_data['generic_file']
+                title = title + " [dataset]"
+                gen_file['title'].append(title)
+                gen_file['resource_type'].append(RESOURCE_TYPE)
+                gen_file['description'].append(DEPOSIT_DESCRIPTION)
+                gen_file['related_url'].append(doi)
+                gen_file['identifier'].append(data_doi)
+                gen_file['publisher'].append(pub_names)
+#                r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
+                print('posting data')
+        return "r"
 
 def post():
     logfile = 'logfile_post_data.log'
