@@ -1,7 +1,6 @@
 *.json
-hits
 *.log
 *.csv
 *.txt
 *.tsv
-scheme
+*.out
