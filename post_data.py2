@@ -1,19 +1,70 @@
 #Post JSON data to data repository
 
+"""
+TEST:
+curl -X POST -H "Content-type: application/json" -u qgkb58 --insecure -d file.json <SERVER>
+"""
+
+JSON_TEMPLATE = {
+  "create_api": "true",
+  "visibility": "private",
+  "generic_file": {
+    "title": [
+    ],
+    "abstract": [
+    ],
+    "tag": [
+    ],
+    "related_url": [
+    ],
+    "resource_type": [
+    ],
+    "contributors_attributes": [
+      {
+        "contributor_name": [
+          "Research Data Manager"
+        ],
+        "affiliation": [
+          "Durham University"
+        ],
+        "role": [
+          "http://id.loc.gov/vocabulary/relators/cre"
+        ]
+      }
+    ],
+    "description": [
+    ],
+    "identifier": [
+    ],
+    "publisher": [
+    ]
+  }
+}
+
 import fileinput
 import json
 import requests
+import getpass
+from requests.auth import HTTPBasicAuth
+
 
 DATACITE_PREFIX = '10.15128'  #DURHAM prefix
 LOCAL_REPO = '******* DURHAM DATA REPOSITORY *******  ' 
 API = 'http://api.scholexplorer.openaire.eu/v2/Links'
-TEST_POST_METHOD = 'https://httpbin.org/post'
-DATA_REPO_SERVER_POST_METHOD = 'https://collections-test.durham.ac.uk/post'
+HTTPBIN_POST_METHOD = 'https://httpbin.org/post'
+TEST_POST_METHOD = 'https://collections-test.durham.ac.uk/files'
+LIVE_POST_METHOD = 'https://collections.durham.ac.uk/files'
+RESOURCE_TYPE = 'Dataset'
+DEPOSIT_DESCRIPTION = 'The University does not hold this research data.  According to the Scholix OpenAIRE API, the research data associated with this research is located in another repository.'
+CURRENT_POST_METHOD = TEST_POST_METHOD
 
-def post_result(my_result, doi, log):
-    """ Trys to post JSON data to DATA_REPO_SERVER_POST_METHOD
+class CancelledError(Exception): pass
+
+def post_result(my_result, doi, username, pwd, log):
+    """ Trys to post JSON data to server
 
     """
+    json_data = JSON_TEMPLATE
     dois_found = []
     if len(my_result) == 0:
         log.write("........did not find research data for research ouput DOI")
@@ -56,16 +107,31 @@ def post_result(my_result, doi, log):
                                 found = 1
                         if found == 0:
                             dois_found.append(data_doi)
-                            r = requests.post(TEST_POST_METHOD, json=my_result) 
-        return r.status_code
+                            gen_file = json_data['generic_file']
+                            title = title + " [dataset]"
+                            gen_file['title'].append(title)
+                            gen_file['resource_type'].append(RESOURCE_TYPE)
+                            gen_file['description'].append(DEPOSIT_DESCRIPTION)
+                            gen_file['related_url'].append(doi)
+                            gen_file['identifier'].append(data_doi)
+                            gen_file['publisher'].append(pub_names)
+                            r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
+        return r
 
-def main():
+def post():
     logfile = 'logfile_post_data.log'
     doi_links = {}
     count = 0
 
     j = open('data.json', 'w')  
     log = open(logfile, 'w')
+
+    username = raw_input("Enter CIS username: ")
+    if not username:
+        raise CancelledError()
+    pwd = getpass.getpass(prompt="Enter password (N.B.: you will *not* see any input as you type): ", stream=None)
+    if not pwd:
+        raise CancelledError()
     
     for doi in fileinput.input():
         doi = doi.rstrip()
@@ -89,12 +155,14 @@ def main():
                 json_string = json.dumps(json_data, indent=4)
                 j.write(json_string)
                 my_result = json_data['result']
-                response_code = post_result(my_result, doi, log)
-                if response_code == 200:
-                    log.write('... ... ... 200 success')
-                else:
-                    log.write('... ... ... ' + str(response_code) + ' WHAT HAPPENED?')
+                response = post_result(my_result, doi, username, pwd, log)
+                print('Response from ' + CURRENT_POST_METHOD)
+                print(r.json())
+#                if response == 200:
+#                    log.write('... ... ... 200 success')
+#                else:
+#                    log.write('... ... ... ' + str(response_code) + ' WHAT HAPPENED?')
             log.write("\n")
     
 if __name__ == "__main__":
-	main()
+	post()

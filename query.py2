@@ -9,7 +9,7 @@ import requests
 
 API = 'http://api.scholexplorer.openaire.eu/v2/Links'
 out = 'records.json'
-hits = 'hits'
+hits = 'hits.out'
 success = 0
 no_link = 0
 found = []
