@@ -2,7 +2,11 @@
 
 ## History
 The list of research output DOIs was created by the Repository Manager on 14/3/2019.
-This list is the input file.
+This list is the input file for the *Query* script.
+
+## Requirements
+You must install the 3rd party module: requests  
+Details: http://python-requests.org/
 
 
 ## Query Scholix API script: **query.py2**
