@@ -52,6 +52,15 @@ JSON_TEMPLATE = {
   }
 }
 
+AUTHOR_TEMPLATE = {
+    "contributor_name": [
+    ],
+    "affiliation": [
+    ],
+    "role": [
+    ]
+}
+
 import fileinput
 import json
 import requests
@@ -76,6 +85,7 @@ def post_result(my_result, doi, username, pwd, log):
 
     """
     json_data = JSON_TEMPLATE
+    author = AUTHOR_TEMPLATE
     dois_found = []
     if len(my_result) == 0:
         log.write("........did not find research data for research ouput DOI")
@@ -95,7 +105,7 @@ def post_result(my_result, doi, username, pwd, log):
             pub_names = ""
             for index in range(len(pub_list)):
                 pub_names = pub_names + pub_list[index]['name'] + ' ; '
-            title = source['Title']
+            title = target['Title']
             mat_type = source['Type']
             creator_list = source['Creator'] #list of creators
             idict = source['Identifier']
@@ -106,7 +116,6 @@ def post_result(my_result, doi, username, pwd, log):
                     print('Ignoring link to local data repository')
                     log.write("........Ignoring link to local data repository")
                     #doi_links[doi] = LOCAL_REPO + data_doi
-                    mylist = []
                 else:
                     #process id
                     scheme = id['IDScheme']
@@ -122,14 +131,22 @@ def post_result(my_result, doi, username, pwd, log):
                 gen_file = json_data['generic_file']
                 title = title + " [dataset]"
                 gen_file['title'].append(title)
+                if len(creator_list) > 0:
+                    for index in range(len(creator_list)):
+                        author['contributor_name'].append(creator_list[index]['Name'])
+                        author['role'].append('http://id.loc.gov/vocabulary/relators/cre')
+                        gen_file['contributors_attributes'].append(author)
                 gen_file['resource_type'].append(RESOURCE_TYPE)
                 gen_file['description'].append(DEPOSIT_DESCRIPTION)
                 gen_file['related_url'].append(doi)
-                gen_file['identifier'].append(data_doi)
-                gen_file['publisher'].append(pub_names)
-#                r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
+                for data_doi in dois_found:
+                    gen_file['identifier'].append(data_doi)
+                gen_file['publisher'].append(pub_names[:-3])
+                #r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
                 print('posting data')
-        return "r"
+                json_string = json.dumps(json_data, indent=4)
+                print(json_string)
+    return True
 
 def post():
     logfile = 'logfile_post_data.log'
@@ -170,7 +187,7 @@ def post():
                 my_result = json_data['result']
                 response = post_result(my_result, doi, username, pwd, log)
                 print('Response from ' + CURRENT_POST_METHOD)
-                print(r.json())
+#                print(r.json())
 #                if response == 200:
 #                    log.write('... ... ... 200 success')
 #                else:
