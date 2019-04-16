@@ -18,7 +18,7 @@ curl -X POST -H "Content-type: application/json" -u <USERNAME > --insecure -d fi
 
 JSON_TEMPLATE = {
   "create_api": "true",
-  "visibility": "private",
+  "visibility": "open",
   "generic_file": {
     "title": [
     ],
@@ -61,6 +61,9 @@ AUTHOR_TEMPLATE = {
     ]
 }
 
+#import pdb
+import sys
+import copy
 import fileinput
 import json
 import requests
@@ -84,14 +87,13 @@ def post_result(my_result, doi, username, pwd, log):
     """ Trys to post JSON data to server
 
     """
-    json_data = JSON_TEMPLATE
-    author = AUTHOR_TEMPLATE
-    dois_found = []
     if len(my_result) == 0:
         log.write("........did not find research data for research ouput DOI")
     else:
         #process data
         for link in my_result:
+            json_data = copy.deepcopy(JSON_TEMPLATE)
+            dois_found = []
             source = link['source']
             target = link['target'] #to get pub date
             pub_date = target['PublicationDate']
@@ -109,6 +111,7 @@ def post_result(my_result, doi, username, pwd, log):
             mat_type = source['Type']
             creator_list = source['Creator'] #list of creators
             idict = source['Identifier']
+#            pdb.set_trace()
             for id in idict:
                 data_doi = id['ID']
                 if data_doi.startswith(DATACITE_PREFIX):
@@ -133,20 +136,27 @@ def post_result(my_result, doi, username, pwd, log):
                 gen_file['title'].append(title)
                 if len(creator_list) > 0:
                     for index in range(len(creator_list)):
+                        author = copy.deepcopy(AUTHOR_TEMPLATE)
+#                        print("Index " + str(index) + "******************************\in")
                         author['contributor_name'].append(creator_list[index]['Name'])
                         author['role'].append('http://id.loc.gov/vocabulary/relators/cre')
                         gen_file['contributors_attributes'].append(author)
+                        print("Gen file")
+                        json_string = json.dumps(gen_file, indent=4)
+                        print(json_string)
+#                    sys.exit(["die"])
+                
                 gen_file['resource_type'].append(RESOURCE_TYPE)
                 gen_file['description'].append(DEPOSIT_DESCRIPTION)
                 gen_file['related_url'].append(doi)
                 for data_doi in dois_found:
                     gen_file['identifier'].append(data_doi)
                 gen_file['publisher'].append(pub_names[:-3])
-                #r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
+                r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
                 print('posting data')
                 json_string = json.dumps(json_data, indent=4)
                 print(json_string)
-    return True
+    return r
 
 def post():
     logfile = 'logfile_post_data.log'
