@@ -18,7 +18,7 @@ curl -X POST -H "Content-type: application/json" -u <USERNAME > --insecure -d fi
 
 JSON_TEMPLATE = {
   "create_api": "true",
-  "visibility": "open",
+  "visibility": "restricted",
   "generic_file": {
     "title": [
     ],
@@ -111,7 +111,6 @@ def post_result(my_result, doi, username, pwd, log):
             mat_type = source['Type']
             creator_list = source['Creator'] #list of creators
             idict = source['Identifier']
-#            pdb.set_trace()
             for id in idict:
                 data_doi = id['ID']
                 if data_doi.startswith(DATACITE_PREFIX):
@@ -139,24 +138,31 @@ def post_result(my_result, doi, username, pwd, log):
                         author = copy.deepcopy(AUTHOR_TEMPLATE)
 #                        print("Index " + str(index) + "******************************\in")
                         author['contributor_name'].append(creator_list[index]['Name'])
+                        author['affiliation'].append("University X")   #bug fix
                         author['role'].append('http://id.loc.gov/vocabulary/relators/cre')
                         gen_file['contributors_attributes'].append(author)
-                        print("Gen file")
-                        json_string = json.dumps(gen_file, indent=4)
-                        print(json_string)
+#                        print("Gen file")
+#                        json_string = json.dumps(gen_file, indent=4)
+#                        print(json_string)
 #                    sys.exit(["die"])
                 
                 gen_file['resource_type'].append(RESOURCE_TYPE)
                 gen_file['description'].append(DEPOSIT_DESCRIPTION)
-                gen_file['related_url'].append(doi)
+                gen_file['related_url'].append("http://doi.org/" + doi)
                 for data_doi in dois_found:
-                    gen_file['identifier'].append(data_doi)
+                    gen_file['identifier'].append("http://doi.org/" + data_doi)
                 gen_file['publisher'].append(pub_names[:-3])
-                r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
-                print('posting data')
+
+#######################################################################################################################
+#                pdb.set_trace()
+#######################################################################################################################
+
+#                r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
+                print('FAKE posting data')
                 json_string = json.dumps(json_data, indent=4)
-                print(json_string)
-    return r
+#                print(json_string)
+#    return r
+    return "r"
 
 def post():
     logfile = 'logfile_post_data.log'
@@ -197,7 +203,7 @@ def post():
                 my_result = json_data['result']
                 response = post_result(my_result, doi, username, pwd, log)
                 print('Response from ' + CURRENT_POST_METHOD)
-#                print(r.json())
+                print(r)
 #                if response == 200:
 #                    log.write('... ... ... 200 success')
 #                else:
