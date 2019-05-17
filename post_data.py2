@@ -48,6 +48,8 @@ JSON_TEMPLATE = {
     "identifier": [
     ],
     "publisher": [
+    ],
+    "date_created": [
     ]
   }
 }
@@ -78,7 +80,7 @@ HTTPBIN_POST_METHOD = 'https://httpbin.org/post'
 TEST_POST_METHOD = 'https://collections-test.durham.ac.uk/files'
 LIVE_POST_METHOD = 'https://collections.durham.ac.uk/files'
 RESOURCE_TYPE = 'Dataset'
-DEPOSIT_DESCRIPTION = 'The University does not hold this research data.  According to the Scholix OpenAIRE API, the research data associated with this research is located in another repository.'
+DEPOSIT_DESCRIPTION = 'The University does not hold this research data.  According to the Scholix OpenAIRE API, the research data associated with this research is located in one or more other repositories.  Follow the DOI links to get the research data.'
 CURRENT_POST_METHOD = TEST_POST_METHOD
 
 class CancelledError(Exception): pass
@@ -91,9 +93,9 @@ def post_result(my_result, doi, username, pwd, log):
         log.write("........did not find research data for research ouput DOI")
     else:
         #process data
+        dois_found = []
         for link in my_result:
             json_data = copy.deepcopy(JSON_TEMPLATE)
-            dois_found = []
             source = link['source']
             target = link['target'] #to get pub date
             pub_date = target['PublicationDate']
@@ -129,40 +131,36 @@ def post_result(my_result, doi, username, pwd, log):
                                 found = 1
                         if found == 0:
                             dois_found.append(data_doi)
-            if len(dois_found) > 0:
-                gen_file = json_data['generic_file']
-                title = title + " [dataset]"
-                gen_file['title'].append(title)
-                if len(creator_list) > 0:
-                    for index in range(len(creator_list)):
-                        author = copy.deepcopy(AUTHOR_TEMPLATE)
-#                        print("Index " + str(index) + "******************************\in")
-                        author['contributor_name'].append(creator_list[index]['Name'])
-                        author['affiliation'].append("University X")   #bug fix
-                        author['role'].append('http://id.loc.gov/vocabulary/relators/cre')
-                        gen_file['contributors_attributes'].append(author)
-#                        print("Gen file")
-#                        json_string = json.dumps(gen_file, indent=4)
-#                        print(json_string)
-#                    sys.exit(["die"])
-                
-                gen_file['resource_type'].append(RESOURCE_TYPE)
-                gen_file['description'].append(DEPOSIT_DESCRIPTION)
-                gen_file['related_url'].append("http://doi.org/" + doi)
-                for data_doi in dois_found:
-                    gen_file['identifier'].append("http://doi.org/" + data_doi)
-                gen_file['publisher'].append(pub_names[:-3])
+        if len(dois_found) > 0:
+            gen_file = json_data['generic_file']
+            title = title + " [dataset]"
+            gen_file['title'].append(title)
+            if len(creator_list) > 0:
+                for index in range(len(creator_list)):
+                    author = copy.deepcopy(AUTHOR_TEMPLATE)
+                    author['contributor_name'].append(creator_list[index]['Name'])
+                    author['affiliation'].append("University X")   #bug fix
+                    author['role'].append('http://id.loc.gov/vocabulary/relators/cre')
+                    gen_file['contributors_attributes'].append(author)
+            gen_file['resource_type'].append(RESOURCE_TYPE)
+            gen_file['description'].append(DEPOSIT_DESCRIPTION)
+            gen_file['related_url'].append("http://doi.org/" + doi)
+            for data_doi in dois_found:
+                gen_file['identifier'].append("http://doi.org/" + data_doi)
+            gen_file['publisher'].append(pub_names[:-3])
+            gen_file['date_created'].append(pub_date)
 
 #######################################################################################################################
 #                pdb.set_trace()
 #######################################################################################################################
 
-#                r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
-                print('FAKE posting data')
-                json_string = json.dumps(json_data, indent=4)
-#                print(json_string)
-#    return r
-    return "r"
+            r = requests.post(CURRENT_POST_METHOD, verify=False, json=json_data, auth=HTTPBasicAuth(username, pwd))
+#        print('FAKE posting data')
+#        json_string = json.dumps(json_data, indent=4)
+#        print(json_string)
+            return r
+        else:
+            sys.exit('No data DOIs found for this research paper DOI')
 
 def post():
     logfile = 'logfile_post_data.log'
@@ -203,11 +201,18 @@ def post():
                 my_result = json_data['result']
                 response = post_result(my_result, doi, username, pwd, log)
                 print('Response from ' + CURRENT_POST_METHOD)
-                print(r)
-#                if response == 200:
-#                    log.write('... ... ... 200 success')
-#                else:
-#                    log.write('... ... ... ' + str(response_code) + ' WHAT HAPPENED?')
+                try:
+                    who_shot_jr = response.json()
+                    if who_shot_jr['status'] == 'ok':
+                        log.write('... ... ... ok posting data')
+                        print('ok posting data')
+                    else:
+                        log.write('... ... ... FAILED posting data')
+                        print(who_shot_jr['status'])
+                        sys.exit('Failed to post data')
+                except ValueError:
+                    log.write('No JSON data returned...check your credentials...')
+                    sys.exit('No JSON data returned...check your credentials...')
             log.write("\n")
     
 if __name__ == "__main__":
