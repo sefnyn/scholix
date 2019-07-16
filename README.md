@@ -69,22 +69,24 @@ The Sufia/Hydra API has been customised in two ways:
 1. The API accepts JSON data without depositing a research dataset
 2. The API allows HTTP basic authentication by repository admin users only
 
-###What this script does:
+### What this script does:
 For each research paper DOI, create one deposit record in the local data repository.  The record will contain all research data DOIs associated with the research paper.
 
 The script has been successfuly tested with Sufia/Hydra v.6.3.0.
 
 Execute the script:
 > python2 post_data.py2 hits.out 
+
 Enter CIS username: pzvx49
 Enter password (N.B.: you will *not* see any input as you type): 
 
-##########......##########
-##########  1  ##########
-##########......##########
+##########......##########  
+#########  1  ##########  
+#########......##########  
 
 Processing doi 10.1111/ecog.02712
-/usr/local/lib/python2.7/dist-packages/urllib3/connectionpool.py:851: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
-  InsecureRequestWarning)
+/usr/local/lib/python2.7/dist-packages/urllib3/connectionpool.py:851: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings InsecureRequestWarning)
+
 Response from https://collections-test.durham.ac.uk/files
+
 ok posting data
