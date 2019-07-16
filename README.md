@@ -75,7 +75,8 @@ For each research paper DOI, create one deposit record in the local data reposit
 The script has been successfuly tested with Sufia/Hydra v.6.3.0.
 
 Execute the script:
-> python2 post_data.py2 hits.out 
+> python2 post_data.py2 hits.out  
+>  
 > Enter CIS username: pzvx49  
 > Enter password (N.B.: you will *not* see any input as you type):   
 >  
