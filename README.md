@@ -9,13 +9,13 @@ You must install the 3rd party module: requests
 Details: http://python-requests.org/
 
 
-## Query Scholix API script: **query.py2**
-The script takes one command line parameter; namely, a file containing DOIs from our repository containing research outputs.
+## Query Scholix API script: **query.py**
+The script takes one command line parameter; namely, a file containing DOIs from the repository containing research outputs.
 
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
 
 Execute script
-> python query.py2 testDOI.csv
+> python query.py testDOI.csv
 
 Output file: **hits**  
 10.1039/c8ra01257a  
@@ -24,11 +24,11 @@ Output file: **hits**
 
 
 
-## Make citations: **mk_citations.py2**
-Like query.py2, this script makes one API call for every DOI in the input file.
+## Make citations: **mk_citations.py**
+Like query.py, this script makes one API call for every DOI in the input file.
 
 Execute script
-> python mk_citations.py2 hits
+> python mk_citations.py hits
 
 The script creates several output files:
 - links.tsv
@@ -38,9 +38,9 @@ The script creates several output files:
 
 Output file: **links.tsv**
 File format is:  
-*DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...*
+*DOI<TAB>DATA-DOI<TAB>DATA-DOI<TAB>DATA-DOI...*
 
-This file includes data DOIs pointing to the Durham research data repository and are included for completeness.  For example:  
+This file includes data DOIs pointing to the local research data repository and are included for completeness.  For example:  
 10.1021/ol801121p	10.5517/ccqt7yp	10.5517/ccqt7wm	10.5517/ccqt7xn  
 10.1016/j.compstruc.2017.05.004	******* DURHAM DATA REPOSITORY *******  10.15128/r1n870zq804  
 10.1186/s40814-016-0053-3	10.6084/m9.figshare.c.3610439_d1	10.6084/m9.figshare.c.3610439_d1.v1
@@ -62,6 +62,6 @@ Processing doi 10.1186/s40814-016-0053-3........success!........success!........
 Processing doi 10.1002/anie.201309680........success!
 
 
-## Post data: post_data.py2
+## Post data: post_data.py
 
 Under development
