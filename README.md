@@ -1,12 +1,11 @@
 # Find links between research outputs and research data in other data repositories
 
-## History
-The list of research output DOIs was created by the Repository Manager on 14/3/2019.
-This list is the input file for the *Query* script.
-
 ## Requirements
 You must install the 3rd party module: requests  
-Details: http://python-requests.org/
+Full details: http://python-requests.org/
+
+You will need a list of DOIs for research papers from your institutional repository.
+This list is the input file for the *Query* script.
 
 
 ## Query Scholix API script: **query.py**
