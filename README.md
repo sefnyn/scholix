@@ -62,7 +62,7 @@ Processing doi 10.1002/anie.201309680........success!
 
 
 ## Post data: post_data.py
-The script illustrates how you might post JSON data to a repository API.  This particular script is designed to call a Sufia/Hydra API only.
+The script illustrates how you might post JSON data to a repository API.  This particular script is designed to call a Sufia/Hydra/Samvera/Hyrax API only.
 
 The Sufia/Hydra API has been customised in two ways:
 1. The API accepts JSON data without depositing a research dataset
