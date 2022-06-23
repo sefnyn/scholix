@@ -7,6 +7,8 @@ Full details: http://python-requests.org/
 You will need a list of DOIs for research papers from your institutional repository.
 This list is the input file for the *Query* script.
 
+## Licence
+Code written by N Syrotiuk licenced under CC-BY.
 
 ## Query Scholix API script: **query.py**
 The script takes one command line parameter; namely, a file containing DOIs from the repository containing research outputs.
