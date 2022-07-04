@@ -2,7 +2,7 @@
 
 ## Requirements
 You must install the 3rd party module: requests  
-Full details: http://python-requests.org/
+Full details: https://pypi.org/project/requests/
 
 You will need a list of DOIs for research papers from your institutional repository.
 This list is the input file for the *Query* script.
