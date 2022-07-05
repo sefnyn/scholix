@@ -18,7 +18,7 @@ The script makes one API call for every DOI in the input file.  If the API finds
 Execute script
 > python query.py testDOI.csv
 
-Output file: **hits**  
+Output file: **hits.out**  
 10.1039/c8ra01257a  
 10.1107/S1600536804011663  
 10.1163/22134808-20191324
@@ -29,7 +29,7 @@ Output file: **hits**
 Like query.py, this script makes one API call for every DOI in the input file.
 
 Execute script
-> python mk_citations.py hits
+> python mk_citations.py hits.out
 
 The script creates several output files:
 - links.tsv
