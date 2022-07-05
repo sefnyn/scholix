@@ -19,9 +19,9 @@ Execute script
 > python query.py sampleDOI.txt
 
 Output file: **hits.out**  
-10.1109/ICIP.2015.7351744
-10.1515/jbnst-2017-0146
-10.1002/anie.201804488
+10.1109/ICIP.2015.7351744<br>
+10.1515/jbnst-2017-0146<br>
+10.1002/anie.201804488<br>
 10.1016/j.compstruc.2017.05.004
 
 
@@ -43,9 +43,9 @@ File format is:
 
 This file includes data DOIs pointing to the local research data repository and are included for completeness.  For example:
 
-10.1109/ICIP.2015.7351744	******* DURHAM DATA REPOSITORY *******  10.15128/3n203z084
-10.1515/jbnst-2017-0146	10.1111/bjir.12193	10.1257/jep.28.1.167	10.1177/0959680117697861	...
-10.1002/anie.201804488	10.1021/cr00002a004	10.1021/nn4015714	10.1073/pnas.0903187106	10.1021/ja00756a007	...
+10.1109/ICIP.2015.7351744	******* DURHAM DATA REPOSITORY *******  10.15128/3n203z084<br>
+10.1515/jbnst-2017-0146	10.1111/bjir.12193	10.1257/jep.28.1.167	10.1177/0959680117697861	...<br>
+10.1002/anie.201804488	10.1021/cr00002a004	10.1021/nn4015714	10.1073/pnas.0903187106	10.1021/ja00756a007	...<br>
 10.1016/j.compstruc.2017.05.004	10.1007/s00466-019-01783-3	10.1007/s40571-019-00239-y	10.1007/s00707-017-2098-7 ...
 
 
