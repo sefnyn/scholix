@@ -11,7 +11,7 @@ This list is the input file for the *Query* script.
 Code written by N Syrotiuk licenced under CC-BY.
 
 ## Query Scholix API script: **query.py**
-The script takes one command line parameter; namely, a file containing DOIs from the repository containing research outputs.
+The script takes one command line parameter; namely, a file containing DOIs of research papers.
 
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
 
