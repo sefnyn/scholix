@@ -16,7 +16,7 @@ The script takes one command line parameter; namely, a file containing DOIs of r
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
 
 Execute script
-> python query.py testDOI.csv
+> python query.py sampleDOI.txt
 
 Output file: **hits.out**  
 10.1039/c8ra01257a  
