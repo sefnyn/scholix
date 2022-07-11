@@ -16,13 +16,11 @@ The script takes one command line parameter; namely, a file containing DOIs of r
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
 
 Execute script
-> python query.py sampleDOI.txt
+> python query.py oneDOI.txt
 
 Output file: **hits.out**  
-10.1109/ICIP.2015.7351744<br>
-10.1515/jbnst-2017-0146<br>
 10.1002/anie.201804488<br>
-10.1016/j.compstruc.2017.05.004
+
 
 
 ## Make citations: **mk_citations.py**
@@ -41,30 +39,22 @@ Output file: **links.tsv**
 File format is:  
 *DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...* where \t represents a tab character
 
-This file includes data DOIs pointing to the local research data repository and are included for completeness.  For example:
+For example:
 
-10.1109/ICIP.2015.7351744	******* DURHAM DATA REPOSITORY *******  10.15128/3n203z084<br>
-10.1515/jbnst-2017-0146	10.1111/bjir.12193	10.1257/jep.28.1.167	10.1177/0959680117697861	...<br>
-10.1002/anie.201804488	10.1021/cr00002a004	10.1021/nn4015714	10.1073/pnas.0903187106	10.1021/ja00756a007	...<br>
-10.1016/j.compstruc.2017.05.004	10.1007/s00466-019-01783-3	10.1007/s40571-019-00239-y	10.1007/s00707-017-2098-7 ...
+10.1002/anie.201804488	10.5517/ccdc.csd.cc1plxx3	10.5517/ccdc.csd.cc1plxy4
 
 
-Remove lines containing DURHAM DATA REPOSITORY:
+The file may contain data DOIs pointing to the local research data repository.  If so, you might want to remove the lines containing DURHAM DATA REPOSITORY:
 >grep -v DURHAM links.tsv > linksWithoutDurham.tsv
 
 Output file: **citations.txt**  [lines appear to wrap here but do not wrap in the file]
->Šibalić, N.  (2017):  ARC: An open-source library for calculating properties of alkali Rydberg atoms.  Mendeley.  [dataset]  DOI: http://doi.org/10.17632/hm5n8w628c.1  
->
->Addison, John T. ; Teixeira, Paulino  (2019):  Workplace Employee Representation and Industrial Relations Performance ‘(replication data)’..  ZBW - Leibniz Informationszentrum Wirtschaft.  [dataset]  DOI: http://doi.org/10.15456/jbnst.2018197.152711  
->
->Aguilar, Juan A. ; Gimenez, Diana ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567327: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxy4
+
+>Gimenez, Diana ; Aguilar, Juan A. ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567326: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxx3
+>Gimenez, Diana ; Aguilar, Juan A. ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567327: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxy4
 
 
 Output file: **logfile.log**  
-Processing doi 10.1680/jgele.17.00081........Ignoring link to local data repoository  
-Processing doi 10.1186/s40814-016-0053-3........success!........success!........success!  
-Processing doi 10.1002/anie.201309680........success!
-
+Processing doi 10.1002/anie.201804488........success!........success!
 
 ## Post data: post_data.py
 The script illustrates how you might post JSON data to a repository API.  This particular script is designed to call a Sufia/Hydra/Samvera/Hyrax API only.

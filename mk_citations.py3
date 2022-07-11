@@ -53,7 +53,7 @@ def process_result(my_result, doi, doi_links, bib, log):
                             #no dups allowed
                             if d == data_doi:
                                 found = 1
-                        if found == 0:		
+                        if found == 0 and mat_type == 'dataset':	
                             dois_found.append(data_doi)
                             bib_rec = make_data_citation(creator_list, pub_date, title, pub_names, mat_type, data_doi)
                             print(bib_rec)
