@@ -35,6 +35,7 @@ The script creates four output files:
 - logfile.log
 
 Output file: **links.tsv**
+
 File format is:  
 *DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...* where \t represents a tab character
 
