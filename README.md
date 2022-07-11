@@ -22,14 +22,13 @@ Output file: **hits.out**
 10.1002/anie.201804488<br>
 
 
-
 ## Make citations: **mk_citations.py**
 Like query.py, this script makes one API call for every DOI in the input file.
 
 Execute script
 > python3 mk_citations.py3 hits.out
 
-The script creates several output files:
+The script creates four output files:
 - links.tsv
 - citations.txt
 - records.json
@@ -40,12 +39,13 @@ File format is:
 *DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...* where \t represents a tab character
 
 For example:
-
 10.1002/anie.201804488	10.5517/ccdc.csd.cc1plxx3	10.5517/ccdc.csd.cc1plxy4
 
+In this example, the research paper (10.1002/anie.201804488) has two corresponding research datasets (10.5517/ccdc.csd.cc1plxx3 and 10.5517/ccdc.csd.cc1plxy4)
 
-The file may contain data DOIs pointing to the local research data repository.  If so, you might want to remove the lines containing DURHAM DATA REPOSITORY:
->grep -v DURHAM links.tsv > linksWithoutDurham.tsv
+The file may contain data DOIs pointing to the local research data repository.  If so, you might want to remove the lines containing LOCAL DATA REPOSITORY:
+>grep -v LOCAL links.tsv > linksWithoutLocalDataRepository.tsv
+
 
 Output file: **citations.txt**  [lines appear to wrap here but do not wrap in the file]
 
@@ -56,6 +56,7 @@ Output file: **citations.txt**  [lines appear to wrap here but do not wrap in th
 
 Output file: **logfile.log**  
 Processing doi 10.1002/anie.201804488........success!........success!
+
 
 ## Post data: post_data.py
 The script illustrates how you might post JSON data to a repository API.  This particular script is designed to call a Sufia/Hydra/Samvera/Hyrax API only.
@@ -72,7 +73,7 @@ The script has been successfuly tested with Sufia/Hydra v.6.3.0.
 Execute the script:
 > python3 post_data.py3 hits.out  
 >  
-> Enter CIS username: pzvx49  
+> Enter username: pzvx49  
 > Enter password (N.B.: you will *not* see any input as you type):   
 >  
 > ##########......##########  
