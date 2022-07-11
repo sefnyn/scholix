@@ -54,6 +54,11 @@ Output file: **citations.txt**  [lines appear to wrap here but do not wrap in th
 >Gimenez, Diana ; Aguilar, Juan A. ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567327: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxy4
 
 
+Output file: **records.json**
+
+This file contains the JSON response from the Scholix API.
+
+
 Output file: **logfile.log**  
 Processing doi 10.1002/anie.201804488........success!........success!
 
