@@ -16,7 +16,7 @@ The script takes one command line parameter; namely, a file containing DOIs of r
 The script makes one API call for every DOI in the input file.  If the API finds corresponding research data for the DOI then it writes the DOI to the output file.
 
 Execute script
-> python query.py oneDOI.txt
+> python3 query.py oneDOI.txt
 
 Output file: **hits.out**  
 10.1002/anie.201804488<br>
@@ -27,7 +27,7 @@ Output file: **hits.out**
 Like query.py, this script makes one API call for every DOI in the input file.
 
 Execute script
-> python mk_citations.py hits.out
+> python3 mk_citations.py3 hits.out
 
 The script creates several output files:
 - links.tsv
@@ -70,7 +70,7 @@ For each research paper DOI, create one deposit record in the local data reposit
 The script has been successfuly tested with Sufia/Hydra v.6.3.0.
 
 Execute the script:
-> python2 post_data.py2 hits.out  
+> python3 post_data.py3 hits.out  
 >  
 > Enter CIS username: pzvx49  
 > Enter password (N.B.: you will *not* see any input as you type):   
