@@ -23,7 +23,7 @@ Output file: **hits.out**
 
 
 ## Make citations: **mk_citations.py**
-Like query.py, this script makes one API call for every DOI in the input file.  Now the material type is checked.  The output files only include DOIs of research papers if they link to dataset DOIs.
+Like query.py, this script makes one API call for every DOI in the input file.  Now the material type is checked.  Two output files (links.tsv and citations.txt) only include DOIs of research papers if they link to dataset DOIs.
 
 Execute script
 > python3 mk_citations.py3 hits.out
@@ -61,7 +61,7 @@ This file contains the JSON response from the Scholix API.
 
 
 Output file: **logfile.log**  
-Processing doi 10.1002/anie.201804488........success!........success!
+Processing doi 10.1002/anie.201804488........found dataset!........found dataset!
 
 
 ## Post data: post_data.py
