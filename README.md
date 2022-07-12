@@ -21,6 +21,8 @@ Execute script
 Output file: **hits.out**  
 10.1002/anie.201804488<br>
 
+The example input file here contains one DOI only.  This makes the README documentation more comprehensible.  In practice you will have thousands of DOIs in the input file.
+
 
 ## Make citations: **mk_citations.py**
 Like query.py, this script makes one API call for every DOI in the input file.  Now the material type is checked.  Two output files (links.tsv and citations.txt) only include DOIs of research papers if they link to dataset DOIs.
