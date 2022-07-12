@@ -45,7 +45,7 @@ for doi in fileinput.input():
                 success += 1
                 fh.write(doi)
             else:
-                print('Did not find any research data for doi ' + doi)
+                print('Did not find any links for doi ' + doi)
                 no_link += 1
         except ValueError:
             print('Invalid JSON')
