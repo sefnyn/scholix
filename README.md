@@ -35,6 +35,7 @@ The script creates four output files:
 - logfile.log
 
 Output file: **links.tsv**
+
 File format is:  
 *DOI\tDATA-DOI\tDATA-DOI\tDATA-DOI...* where \t represents a tab character
 
@@ -52,6 +53,11 @@ Output file: **citations.txt**  [lines appear to wrap here but do not wrap in th
 >Gimenez, Diana ; Aguilar, Juan A. ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567326: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxx3
 
 >Gimenez, Diana ; Aguilar, Juan A. ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567327: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxy4
+
+
+Output file: **records.json**
+
+This file contains the JSON response from the Scholix API.
 
 
 Output file: **logfile.log**  
