@@ -23,7 +23,7 @@ Output file: **hits.out**
 
 
 ## Make citations: **mk_citations.py**
-Like query.py, this script makes one API call for every DOI in the input file.  Now the material type is checked.  Only datasets are included in the output files.
+Like query.py, this script makes one API call for every DOI in the input file.  Now the material type is checked.  The output files only include DOIs of research papers if they link to dataset DOIs.
 
 Execute script
 > python3 mk_citations.py3 hits.out
