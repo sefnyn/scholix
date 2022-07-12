@@ -5,7 +5,7 @@ import json
 import requests
 
 DATACITE_PREFIX = '10.15128'  #DURHAM prefix
-LOCAL_REPO = '******* DURHAM DATA REPOSITORY *******  ' 
+LOCAL_REPO = '******* LOCAL DATA REPOSITORY *******  ' 
 API = 'http://api.scholexplorer.openaire.eu/v2/Links'
 
 
@@ -58,7 +58,7 @@ def process_result(my_result, doi, doi_links, bib, log):
                             bib_rec = make_data_citation(creator_list, pub_date, title, pub_names, mat_type, data_doi)
                             print(bib_rec)
                             bib.write(bib_rec + '\n\n')
-                            log.write("........success!")
+                            log.write("........found dataset!")
         return dois_found
 
 def make_data_citation(creator_list, pub_year, title, pub_names, mat_type, doi):
