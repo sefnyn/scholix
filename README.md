@@ -10,6 +10,9 @@ This list is the input file for the *Query* script.
 ## Licence
 Code written by N Syrotiuk licenced under CC-BY.
 
+## API documentation
+http://scholexplorer.openaire.eu/
+
 ## Query Scholix API script: **query.py**
 The script takes one command line parameter; namely, a file containing DOIs of research papers, one DOI per line.
 
