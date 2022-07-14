@@ -1,5 +1,13 @@
 # Find links between research outputs and research data in other data repositories
 
+graph TD
+    A[Research paper DOIs: doi.txt] --> B(Query.py doi.txt) --> C(hits.out)
+    C --> D[mk_citations.py hits.out]
+    D --> links.tsv
+    D --> citations.txt
+    D --> records.json
+    D --> logfile.log
+
 ## Requirements
 You must install the 3rd party module: requests  
 Full details: https://pypi.org/project/requests/
