@@ -8,10 +8,10 @@ graph TD;
     D --> F([citations.txt]);
     D --> G([records.json]);
     D --> H([logfile.log]);
-    E --> J(["doi<TAB>dataset_doi<TAB>dataset_doi"]);
+    E --> J(["doi <TAB> dataset_doi <TAB> dataset_doi"]);
     F --> K(["Authors. (YYYY): Title.  Publisher.  DOI"]);
     G --> L([JSON response]);
-    H --> K([  ]);
+    H --> M([  ]);
     
 
 ```
