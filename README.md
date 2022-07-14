@@ -2,13 +2,15 @@
 
 ```mermaid
 graph TD;
-    A([Research paper DOIs in file doi.txt]) --> B([query.py doi.txt]) --> C([hits.out]);
+    A[(Research paper DOIs)]
+    A --> B([query.py doi.txt]);
+    B --> C([hits.out]);
     C --> D([mk_citations.py hits.out]);
     D --> E([links.tsv]);
     D --> F([citations.txt]);
     D --> G([records.json]);
     D --> H([logfile.log]);
-    E --> |paperDOI|  |datasetDOI|  |datasetDOI|  |datasetDOI|;
+    E --> J(["paperDOI datasetDOI datasetDOI datasetDOI ..."]);
     F --> K(["Authors. (YYYY): Title.  Publisher.  DOI"]);
     G --> L([JSON response]);
     
