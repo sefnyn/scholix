@@ -8,7 +8,9 @@ graph TD;
     D --> F[citations.txt];
     D --> G[records.json];
     D --> H[logfile.log];
-    E --> J[10.1002/anie.201804488	10.5517/ccdc.csd.cc1plxx3];
+    E --> J[10.1002/anie.201804488	10.5517/ccdc.csd.cc1plxx3   10.5517/ccdc.csd.cc1plxy4];
+    F --> K["Gimenez, Diana ; Aguilar, Juan A. ; Bromley, Elizabeth H. C. ; Cobb, Steven L.  (2018):  CCDC 1567326: Experimental Crystal Structure Determination.  Cambridge Crystallographic Data Centre.  [dataset]  DOI: http://doi.org/10.5517/ccdc.csd.cc1plxx3"];
+
     
 
 ```
