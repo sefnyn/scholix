@@ -8,7 +8,7 @@ graph TD;
     C --> D([mk_citations.py hits.out]);
     D --> E([links.tsv]);
     D --> F([citations.txt]);
-    D --> G([records.json]);
+    D --> G([fa:fa-database records.json]);
     D --> H([logfile.log]);
     E ----> P2([paper DOI]);
     E ----> P1([paper DOI]);
