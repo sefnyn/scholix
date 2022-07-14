@@ -11,6 +11,8 @@ graph TD;
     D --> G([records.json]);
     D --> H([logfile.log]);
     E ----> J1([paper DOI]) --> J2([dataset DOI]) --> J3([dataset DOI]);
+    E ----> J1([paper DOI]) --> J2([dataset DOI]) --> J3([dataset DOI]);
+    E ----> J1([paper DOI]) --> J2([dataset DOI]) --> J3([dataset DOI]);
     F --> K([Full bib citations]);
     G --> L([JSON response]);
 ```
