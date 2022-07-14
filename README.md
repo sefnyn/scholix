@@ -2,18 +2,18 @@
 
 ```mermaid
 graph TD;
-    A[(Research paper DOIs)]
+    A[fa:fa-twitter Research paper DOIs]
     A --> B([query.py doi.txt]);
     B --> C([hits.out]);
     C --> D([mk_citations.py hits.out]);
     D --> E([links.tsv]);
     D --> F([citations.txt]);
-    D --> G([fa:fa-database records.json]);
+    D --> G([records.json]);
     D --> H([logfile.log]);
     E ----> P2([paper DOI]);
     E ----> P1([paper DOI]);
     E ----> P3([paper DOI]);
-    P2 --> D2A([fa:fa-database dataset DOI]);
+    P2 --> D2A([dataset DOI]);
     P2 --> D2B([dataset DOI]);
     P2 --> D2C([dataset DOI]);
     P1 --> D1([dataset DOI]);
