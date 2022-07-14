@@ -13,7 +13,7 @@ graph TD;
     E ----> P2([paper DOI]);
     E ----> P1([paper DOI]);
     E ----> P3([paper DOI]);
-    P2 --> D2A([fa:fa-solid fa-database dataset DOI]);
+    P2 --> D2A([fa:fa-database dataset DOI]);
     P2 --> D2B([dataset DOI]);
     P2 --> D2C([dataset DOI]);
     P1 --> D1([dataset DOI]);
