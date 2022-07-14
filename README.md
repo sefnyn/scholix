@@ -14,11 +14,11 @@ graph TD;
     E ----> P2([paper DOI]);
     E ----> P3([paper DOI]);
     P1 --> D1([dataset DOI]);
-    P2 --> D1([dataset DOI]);
-    P2 --> D2([dataset DOI]);
-    P2 --> D3([dataset DOI]);
-    P3 --> D3([dataset DOI]);
-    P3 --> D3;
+    P2 --> D2A([dataset DOI]);
+    P2 --> D2B([dataset DOI]);
+    P2 --> D2C([dataset DOI]);
+    P3 --> D3A([dataset DOI]);
+    P3 --> D3B([dataset DOI]);
     F --> K([Full bib citations]);
     G --> L([JSON response]);
 ```
