@@ -10,7 +10,7 @@ graph TD;
     D --> F([citations.txt]);
     D --> G([records.json]);
     D --> H([logfile.log]);
-    E ----> J([paper DOI]) --> ([dataset DOI]);
+    E ----> J1([paper DOI]) --> J2([dataset DOI]) --> J3([dataset DOI]);
     F --> K([Full bib citations]);
     G --> L([JSON response]);
 ```
