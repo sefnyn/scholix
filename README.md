@@ -8,6 +8,7 @@ graph TD;
     D --> F[citations.txt];
     D --> G[records.json];
     D --> H[logfile.log];
+    E --> [10.1002/anie.201804488	10.5517/ccdc.csd.cc1plxx3	10.5517/ccdc.csd.cc1plxy4];
 ```
 
 ## Requirements
