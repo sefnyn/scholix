@@ -2,12 +2,12 @@
 
 ```mermaid
 graph TD;
-    A[Research paper DOIs: doi.txt] --> B(Query.py doi.txt) --> C(hits.out);
+    A[Research paper DOIs in file doi.txt] --> B(query.py doi.txt) --> C(hits.out);
     C --> D[mk_citations.py hits.out];
-    D --> links.tsv;
-    D --> citations.txt;
-    D --> records.json;
-    D --> logfile.log;
+    D --> E[links.tsv];
+    D --> F[citations.txt];
+    D --> G[records.json];
+    D --> H[logfile.log];
 ```
 
 ## Requirements
