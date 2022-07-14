@@ -6,11 +6,11 @@ graph TD;
     A --> B([query.py doi.txt]);
     B --> C([hits.out]);
     C --> D([mk_citations.py hits.out]);
-    D --> E([links.tsv]);
+    D ----> E([links.tsv]);
     D --> F([citations.txt]);
     D --> G([records.json]);
     D --> H([logfile.log]);
-    E ----> J(["doi doi doi doi ..."]);
+    E --> J(["doi doi doi doi ..."]);
     F --> K([Full bib citations]);
     G --> L([JSON response]);
 ```
