@@ -1,6 +1,14 @@
 # Find links between research outputs and research data in other data repositories
 
-[![](https://mermaid.ink/img/pako:eNpVkE1rAyEQhv-KzCmBxB_godDGHnoq_bjFUERnszbrBzqWLiH_vWa3S9O5KI_PvINzBhMtgoBj1qln71IF1up-_4oFdTY9SzphZvL5qQhmo-P0TQe23d6xh9VLxTzyNC58PfHdqndUeKy0nsN2E5Z7f_owjjS5GMq1a9EOsyYnbXDhVDiVr1v419am3D5kNDHbwj9LDP9S4rFzA_J2zhg24DF77Wz76_nKFFCPHhWIdrXY6TqQAhUuTa3JasJH6yhmEJ0eCm5AV4pvYzAgKFdcJOl0W53_tS4_XaFrpw)](https://mermaid.live/edit#pako:eNpVkE1rAyEQhv-KzCmBxB_godDGHnoq_bjFUERnszbrBzqWLiH_vWa3S9O5KI_PvINzBhMtgoBj1qln71IF1up-_4oFdTY9SzphZvL5qQhmo-P0TQe23d6xh9VLxTzyNC58PfHdqndUeKy0nsN2E5Z7f_owjjS5GMq1a9EOsyYnbXDhVDiVr1v419am3D5kNDHbwj9LDP9S4rFzA_J2zhg24DF77Wz76_nKFFCPHhWIdrXY6TqQAhUuTa3JasJH6yhmEJ0eCm5AV4pvYzAgKFdcJOl0W53_tS4_XaFrpw)
+```mermaid
+graph TD;
+    A[Research paper DOIs: doi.txt] --> B(Query.py doi.txt) --> C(hits.out);
+    C --> D[mk_citations.py hits.out];
+    D --> links.tsv;
+    D --> citations.txt;
+    D --> records.json;
+    D --> logfile.log;
+```
 
 ## Requirements
 You must install the 3rd party module: requests  
