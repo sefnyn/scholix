@@ -8,7 +8,7 @@ graph TD;
     D --> F([citations.txt]);
     D --> G([records.json]);
     D --> H([logfile.log]);
-    E --> J([paperDOI]) --> ([datasetDOI]) --> ([datasetDOI]) --> ([datasetDOI]);
+    E --> |paperDOI| --> |datasetDOI| --> |datasetDOI| --> |datasetDOI|;
     F --> K(["Authors. (YYYY): Title.  Publisher.  DOI"]);
     G --> L([JSON response]);
     
