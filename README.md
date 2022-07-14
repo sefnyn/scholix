@@ -9,7 +9,7 @@ graph TD;
     D --> G[records.json];
     D --> H[logfile.log];
     E --> J[10.1002/anie.201804488	10.5517/ccdc.csd.cc1plxx3   10.5517/ccdc.csd.cc1plxy4];
-    F --> K[Authors (YYYY) Title  Publisher  DOI];
+    F --> K["Authors (YYYY) Title  Publisher  DOI"];
     
 
 ```
