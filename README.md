@@ -1,5 +1,6 @@
 # Find links between research outputs and research data in other data repositories
 
+```mermaid
 graph TD
     A[Research paper DOIs: doi.txt] --> B(Query.py doi.txt) --> C(hits.out)
     C --> D[mk_citations.py hits.out]
