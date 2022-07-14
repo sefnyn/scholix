@@ -11,7 +11,7 @@ graph TD;
     D --> G([records.json]);
     D --> H([logfile.log]);
     E --> J(["doi doi doi doi ..."]);
-    F --> K([Full bib citations)];
+    F --> K([Full bib citations]);
     G --> L([JSON response]);
 ```
 
