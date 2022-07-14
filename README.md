@@ -10,12 +10,9 @@ graph TD;
     D --> F([citations.txt]);
     D --> G([records.json]);
     D --> H([logfile.log]);
-    E --> J(["paperDOI datasetDOI datasetDOI datasetDOI ..."]);
-    F --> K(["Authors. (YYYY): Title.  Publisher.  DOI"]);
+    E --> J(["doi doi doi doi ..."]);
+    F --> K([Full bib citations);
     G --> L([JSON response]);
-    
-    
-
 ```
 
 ## Requirements
