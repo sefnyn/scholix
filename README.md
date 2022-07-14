@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD;
-    A[fa:fa-twitter Research paper DOIs]
+    A([Research paper DOIs]);
     A --> B([query.py doi.txt]);
     B --> C([hits.out]);
     C --> D([mk_citations.py hits.out]);
