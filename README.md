@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD;
-    A([Research paper DOIs]);
+    A([Research paper DOIs in doi.txt]);
     A --> B([query.py doi.txt]);
     B --> C([hits.out]);
     C --> D([mk_citations.py hits.out]);
@@ -54,7 +54,7 @@ The example input file here contains one DOI only.  This makes the README docume
 Like query.py, this script makes one API call for every DOI in the input file.  Now the material type is checked.  Two output files (links.tsv and citations.txt) only include DOIs of research papers if they link to dataset DOIs.
 
 Execute script
-> python3 mk_citations.py3 hits.out
+> python3 mk_citations.py hits.out
 
 The script creates four output files:
 - links.tsv
