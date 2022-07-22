@@ -57,6 +57,7 @@ def process_result(my_result, doi, doi_links, bib, log):
                             dois_found.append(data_doi)
                             bib_rec = make_data_citation(creator_list, pub_date, title, pub_names, mat_type, data_doi)
                             print(bib_rec)
+                            bib_rec = bib_rec.replace(u"\u2010", "-") # replace naughty Unicode characters.  Fix for Windows OS.
                             bib.write(bib_rec + '\n\n')
                             log.write("........found dataset!")
         return dois_found
@@ -83,7 +84,7 @@ def main():
   
     print('opening file for JSON records: ' + data)
     j = open(data, 'w')
-    tsv = open(links, 'w')
+    tsv = open(links, 'w', encoding='utf-8')
     bib = open(citations,  'w')
     log = open(logfile, 'w')
     
