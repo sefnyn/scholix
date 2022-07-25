@@ -85,7 +85,7 @@ def main():
     print('opening file for JSON records: ' + data)
     j = open(data, 'w')
     tsv = open(links, 'w', encoding='utf-8')
-    bib = open(citations,  'w')
+    bib = open(citations,  'w', encoding='utf-8')
     log = open(logfile, 'w')
     
     for doi in fileinput.input():
