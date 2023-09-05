@@ -68,7 +68,7 @@ def make_data_citation(creator_list, pub_year, title, pub_names, mat_type, doi):
     """
     creators = ""
     for index in range(len(creator_list)):
-        creators = creators + creator_list[index]['Name'] + ' ; '
+        creators = creators + creator_list[index]['name'] + ' ; '
     if pub_year == "":
         pub_year = "n.d."
     ret_string = creators[:-3] + "  (" + str(pub_year) + "):  " + title + ".  " + pub_names[:-3] + ".  [" + mat_type + "]  DOI: http://doi.org/" + doi
