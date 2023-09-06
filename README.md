@@ -120,3 +120,5 @@ Execute the script:
 >  Response from https://collections-test.durham.ac.uk/files  
 >  ok posting data  
 
+## Questions and Comments
+Please open a GitHub Issue if you have any questions or remarks.
