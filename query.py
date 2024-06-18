@@ -16,11 +16,24 @@ found = []
 links = {} #dict where key is dro-doi and value is json record describing research data
 count = 0
 
+def clean(d):
+    
+    """
+    Remove http, https etc and trailing blanks
+    """
+    d = d.rstrip()
+    d = d.replace('http://doi.org/',"")
+    d = d.replace('http://dx.doi.org/',"")
+    d = d.replace('https://doi.org/',"")
+    d = d.replace('https://dx.doi.org/',"")
+    return d
+
 print('opening output file ' + out)
 g = open(out, 'w')
 fh = open(hits, 'w')
 
 for doi in fileinput.input():
+    doi = clean(doi)
     count += 1
     print("################  " + str(count) + "  #################")
     if not doi.strip():
@@ -43,7 +56,7 @@ for doi in fileinput.input():
             if len(res) > 0:
                 #print(res)
                 success += 1
-                fh.write(doi)
+                fh.write(doi + '\n')
             else:
                 print('Did not find any links for doi ' + doi)
                 no_link += 1
@@ -57,3 +70,5 @@ fh.close()
 print('Total DOIs in sample ' + str(success + no_link))
 print('Links found ' + str(success))
 print('Did not find a link ' + str(no_link))
+
+
